@@ -1,0 +1,284 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://scenes/CardBase/scripts/MyCard.gd" type="Script" id=1]
+[ext_resource path="res://scenes/CardBase/scripts/CardBase.gd" type="Script" id=6]
+[ext_resource path="res://assets/cards/verso.png" type="Texture" id=7]
+[ext_resource path="res://scenes/CardBase/scripts/DialogCardModeSelect.gd" type="Script" id=8]
+[ext_resource path="res://scenes/CardBase/scripts/TableMyCard.gd" type="Script" id=9]
+[ext_resource path="res://scenes/CardBase/scripts/DialogActionSelect.gd" type="Script" id=10]
+[ext_resource path="res://scenes/CardBase/scripts/TableEnemyCard.gd" type="Script" id=11]
+[ext_resource path="res://scenes/CardBase/scripts/ButtonFinishAction.gd" type="Script" id=12]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/verso.png-8b81d973854ecbd102808d686d4cab3e.stex"
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/verso.png-8b81d973854ecbd102808d686d4cab3e.stex"
+
+[sub_resource type="StreamTexture" id=3]
+flags = 4
+load_path = "res://.import/verso.png-8b81d973854ecbd102808d686d4cab3e.stex"
+
+[sub_resource type="StreamTexture" id=4]
+flags = 4
+load_path = "res://.import/verso.png-8b81d973854ecbd102808d686d4cab3e.stex"
+
+[node name="CardBase" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_right = 2.00012
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="MyCard0" type="Sprite" parent="."]
+position = Vector2( 200, 690 )
+scale = Vector2( 0.6, 0.65 )
+texture = ExtResource( 7 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "0"
+}
+
+[node name="MyCard1" type="Sprite" parent="."]
+position = Vector2( 500, 690 )
+scale = Vector2( 0.6, 0.65 )
+texture = SubResource( 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "1"
+}
+
+[node name="MyCard2" type="Sprite" parent="."]
+position = Vector2( 800, 690 )
+scale = Vector2( 0.6, 0.65 )
+texture = SubResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "2"
+}
+
+[node name="MyCard3" type="Sprite" parent="."]
+position = Vector2( 1100, 690 )
+scale = Vector2( 0.6, 0.65 )
+texture = SubResource( 3 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "3"
+}
+
+[node name="MyCard4" type="Sprite" parent="."]
+position = Vector2( 1400, 690 )
+scale = Vector2( 0.6, 0.65 )
+texture = SubResource( 4 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "4"
+}
+
+[node name="EnemyCard0" type="Sprite" parent="."]
+visible = false
+position = Vector2( 200, -200 )
+scale = Vector2( 0.6, 0.65 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_editor_description_": "0"
+}
+
+[node name="EnemyCard1" type="Sprite" parent="."]
+visible = false
+position = Vector2( 500, -200 )
+scale = Vector2( 0.6, 0.65 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_editor_description_": "1"
+}
+
+[node name="EnemyCard2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 800, -200 )
+scale = Vector2( 0.6, 0.65 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_editor_description_": "2"
+}
+
+[node name="EnemyCard3" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1100, -200 )
+scale = Vector2( 0.6, 0.65 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_editor_description_": "3"
+}
+
+[node name="EnemyCard4" type="Sprite" parent="."]
+visible = false
+position = Vector2( 1400, -200 )
+scale = Vector2( 0.6, 0.65 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_editor_description_": "4"
+}
+
+[node name="TableMyCard0" type="Sprite" parent="."]
+position = Vector2( 400, 365 )
+scale = Vector2( 0.35, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 9 )
+__meta__ = {
+"_editor_description_": "0"
+}
+
+[node name="TableMyCard1" type="Sprite" parent="."]
+position = Vector2( 600, 365 )
+scale = Vector2( 0.35, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 9 )
+__meta__ = {
+"_editor_description_": "1"
+}
+
+[node name="TableMyCard2" type="Sprite" parent="."]
+position = Vector2( 800, 365 )
+scale = Vector2( 0.35, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 9 )
+__meta__ = {
+"_editor_description_": "2"
+}
+
+[node name="TableMyCard3" type="Sprite" parent="."]
+position = Vector2( 1000, 365 )
+scale = Vector2( 0.35, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 9 )
+__meta__ = {
+"_editor_description_": "3"
+}
+
+[node name="TableMyCard4" type="Sprite" parent="."]
+position = Vector2( 1200, 365 )
+scale = Vector2( 0.35, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 9 )
+__meta__ = {
+"_editor_description_": "4"
+}
+
+[node name="TableEnemyCard0" type="Sprite" parent="."]
+position = Vector2( 400, 120 )
+scale = Vector2( 0.35, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 11 )
+__meta__ = {
+"_editor_description_": "0"
+}
+
+[node name="TableEnemyCard1" type="Sprite" parent="."]
+position = Vector2( 600, 120 )
+scale = Vector2( 0.35, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 11 )
+__meta__ = {
+"_editor_description_": "1"
+}
+
+[node name="TableEnemyCard2" type="Sprite" parent="."]
+position = Vector2( 800, 120 )
+scale = Vector2( 0.35, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 11 )
+__meta__ = {
+"_editor_description_": "2"
+}
+
+[node name="TableEnemyCard3" type="Sprite" parent="."]
+position = Vector2( 1000, 120 )
+scale = Vector2( 0.35, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 11 )
+__meta__ = {
+"_editor_description_": "3"
+}
+
+[node name="TableEnemyCard4" type="Sprite" parent="."]
+position = Vector2( 1200, 120 )
+scale = Vector2( 0.35, 0.4 )
+texture = ExtResource( 7 )
+script = ExtResource( 11 )
+__meta__ = {
+"_editor_description_": "4"
+}
+
+[node name="DialogCardModeSelect" type="ConfirmationDialog" parent="."]
+visible = true
+margin_left = 16.7651
+margin_top = 159.051
+margin_right = 216.765
+margin_bottom = 229.051
+popup_exclusive = true
+window_title = "Card Mode Select"
+dialog_text = "Choose the mode:"
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialogActionSelect" type="ConfirmationDialog" parent="."]
+visible = true
+margin_left = 16.3365
+margin_top = 269.744
+margin_right = 216.337
+margin_bottom = 339.744
+window_title = "Action Select"
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonFinishAction" type="Button" parent="."]
+margin_left = 1342.0
+margin_top = 424.0
+margin_right = 1534.0
+margin_bottom = 480.0
+text = "Finish Round"
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelPlayerHp" type="Label" parent="."]
+margin_left = 14.0
+margin_top = 16.0
+margin_right = 115.0
+margin_bottom = 30.0
+text = "Player HP: 0000"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelEnemyHp" type="Label" parent="."]
+margin_left = 1478.0
+margin_top = 16.0
+margin_right = 1583.0
+margin_bottom = 30.0
+text = "Enemy HP: 0000"
+
+[node name="LabelCardInfo" type="Label" parent="."]
+margin_left = 1406.0
+margin_top = 168.0
+margin_right = 1467.0
+margin_bottom = 199.0
+text = "Card Info:
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimerCardInfo" type="Timer" parent="."]
