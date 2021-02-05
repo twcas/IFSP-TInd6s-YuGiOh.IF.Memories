@@ -10,9 +10,6 @@
 position = Vector2( 800, 450 )
 scale = Vector2( 1.56273, 1.40248 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="ButtonPlay" type="Button" parent="."]
 margin_left = 640.0
@@ -42,7 +39,7 @@ margin_left = 5.0
 margin_top = 885.0
 margin_right = 66.0
 margin_bottom = 899.0
-text = "v1.0.0-alpha"
+text = "v1.0.1-alpha"
 __meta__ = {
 "_edit_use_anchors_": false
 }

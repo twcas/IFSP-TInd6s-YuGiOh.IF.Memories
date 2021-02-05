@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/CardBase/scripts/MyCard.gd" type="Script" id=1]
+[ext_resource path="res://assets/background/2.jpg" type="Texture" id=2]
 [ext_resource path="res://scenes/CardBase/scripts/CardBase.gd" type="Script" id=6]
 [ext_resource path="res://assets/cards/verso.png" type="Texture" id=7]
 [ext_resource path="res://scenes/CardBase/scripts/DialogCardModeSelect.gd" type="Script" id=8]
@@ -35,6 +36,11 @@ __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
 }
+
+[node name="SpriteBackground" type="Sprite" parent="."]
+position = Vector2( 798.218, 450 )
+scale = Vector2( 0.625566, 0.5625 )
+texture = ExtResource( 2 )
 
 [node name="MyCard0" type="Sprite" parent="."]
 position = Vector2( 200, 690 )
@@ -237,6 +243,7 @@ margin_top = 269.744
 margin_right = 216.337
 margin_bottom = 339.744
 window_title = "Action Select"
+dialog_text = "Choose the action:"
 script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
