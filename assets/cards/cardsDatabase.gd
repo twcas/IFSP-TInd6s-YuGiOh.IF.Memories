@@ -37,7 +37,7 @@ const DATA = {
 	JBoss150 : 
 		["Aluno Cortador de Giro", null, 2000, 1000],
 	MatthBrahma : 
-		["Aluno Cerveja", null, 2000, 1000],
+		["Aluno Cerveja", null, 1500, 1700],
 	LuscaViera : 
 		["Aluno Herói", null, 1000, 2000],
 	TurkeyMarley : 
