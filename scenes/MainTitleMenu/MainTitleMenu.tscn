@@ -39,7 +39,7 @@ margin_left = 5.0
 margin_top = 885.0
 margin_right = 66.0
 margin_bottom = 899.0
-text = "v1.0.2-alpha"
+text = "v1.0.3-alpha"
 __meta__ = {
 "_edit_use_anchors_": false
 }

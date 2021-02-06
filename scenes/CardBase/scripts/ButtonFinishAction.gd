@@ -28,8 +28,8 @@ func _button_pressed():
 	elif nodeCardBase.playerCardsRemaining <= 0:
 		print("ENEMY WON THE GAME! (Player ran out of cards)")
 		get_tree().change_scene("res://scenes/MainTitleMenu/MainTitleMenu.tscn")
-	
-	nodeCardBase.enemyRound()
+	else:
+		nodeCardBase.enemyRound()
 
 
 #func _process(delta):

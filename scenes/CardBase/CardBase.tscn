@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scenes/CardBase/scripts/MyCard.gd" type="Script" id=1]
 [ext_resource path="res://assets/background/2.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/cards/slot.jpg" type="Texture" id=3]
 [ext_resource path="res://scenes/CardBase/scripts/CardBase.gd" type="Script" id=6]
 [ext_resource path="res://assets/cards/verso.png" type="Texture" id=7]
 [ext_resource path="res://scenes/CardBase/scripts/DialogCardModeSelect.gd" type="Script" id=8]
@@ -132,9 +133,59 @@ __meta__ = {
 "_editor_description_": "4"
 }
 
+[node name="TableMyCardSlot0" type="Sprite" parent="."]
+position = Vector2( 300, 365 )
+scale = Vector2( 0.55, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="TableMyCardSlot1" type="Sprite" parent="."]
+position = Vector2( 520, 365 )
+scale = Vector2( 0.55, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="TableMyCardSlot2" type="Sprite" parent="."]
+position = Vector2( 740, 365 )
+scale = Vector2( 0.55, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="TableMyCardSlot3" type="Sprite" parent="."]
+position = Vector2( 960, 365 )
+scale = Vector2( 0.55, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="TableMyCardSlot4" type="Sprite" parent="."]
+position = Vector2( 1180, 365 )
+scale = Vector2( 0.55, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="TableEnemyCardSlot0" type="Sprite" parent="."]
+position = Vector2( 300, 120 )
+scale = Vector2( 0.55, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="TableEnemyCardSlot1" type="Sprite" parent="."]
+position = Vector2( 520, 120 )
+scale = Vector2( 0.55, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="TableEnemyCardSlot2" type="Sprite" parent="."]
+position = Vector2( 740, 120 )
+scale = Vector2( 0.55, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="TableEnemyCardSlot3" type="Sprite" parent="."]
+position = Vector2( 960, 120 )
+scale = Vector2( 0.55, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="TableEnemyCardSlot4" type="Sprite" parent="."]
+position = Vector2( 1180, 120 )
+scale = Vector2( 0.55, 0.4 )
+texture = ExtResource( 3 )
+
 [node name="TableMyCard0" type="Sprite" parent="."]
-position = Vector2( 400, 365 )
-scale = Vector2( 0.35, 0.4 )
+position = Vector2( 300, 365 )
+scale = Vector2( 0.3, 0.35 )
 texture = ExtResource( 7 )
 script = ExtResource( 9 )
 __meta__ = {
@@ -142,8 +193,8 @@ __meta__ = {
 }
 
 [node name="TableMyCard1" type="Sprite" parent="."]
-position = Vector2( 600, 365 )
-scale = Vector2( 0.35, 0.4 )
+position = Vector2( 520, 365 )
+scale = Vector2( 0.3, 0.35 )
 texture = ExtResource( 7 )
 script = ExtResource( 9 )
 __meta__ = {
@@ -151,8 +202,8 @@ __meta__ = {
 }
 
 [node name="TableMyCard2" type="Sprite" parent="."]
-position = Vector2( 800, 365 )
-scale = Vector2( 0.35, 0.4 )
+position = Vector2( 740, 365 )
+scale = Vector2( 0.3, 0.35 )
 texture = ExtResource( 7 )
 script = ExtResource( 9 )
 __meta__ = {
@@ -160,8 +211,8 @@ __meta__ = {
 }
 
 [node name="TableMyCard3" type="Sprite" parent="."]
-position = Vector2( 1000, 365 )
-scale = Vector2( 0.35, 0.4 )
+position = Vector2( 960, 365 )
+scale = Vector2( 0.3, 0.35 )
 texture = ExtResource( 7 )
 script = ExtResource( 9 )
 __meta__ = {
@@ -169,8 +220,8 @@ __meta__ = {
 }
 
 [node name="TableMyCard4" type="Sprite" parent="."]
-position = Vector2( 1200, 365 )
-scale = Vector2( 0.35, 0.4 )
+position = Vector2( 1180, 365 )
+scale = Vector2( 0.3, 0.35 )
 texture = ExtResource( 7 )
 script = ExtResource( 9 )
 __meta__ = {
@@ -178,8 +229,8 @@ __meta__ = {
 }
 
 [node name="TableEnemyCard0" type="Sprite" parent="."]
-position = Vector2( 400, 120 )
-scale = Vector2( 0.35, 0.4 )
+position = Vector2( 300, 120 )
+scale = Vector2( 0.3, 0.35 )
 texture = ExtResource( 7 )
 script = ExtResource( 11 )
 __meta__ = {
@@ -187,8 +238,8 @@ __meta__ = {
 }
 
 [node name="TableEnemyCard1" type="Sprite" parent="."]
-position = Vector2( 600, 120 )
-scale = Vector2( 0.35, 0.4 )
+position = Vector2( 520, 120 )
+scale = Vector2( 0.3, 0.35 )
 texture = ExtResource( 7 )
 script = ExtResource( 11 )
 __meta__ = {
@@ -196,8 +247,8 @@ __meta__ = {
 }
 
 [node name="TableEnemyCard2" type="Sprite" parent="."]
-position = Vector2( 800, 120 )
-scale = Vector2( 0.35, 0.4 )
+position = Vector2( 740, 120 )
+scale = Vector2( 0.3, 0.35 )
 texture = ExtResource( 7 )
 script = ExtResource( 11 )
 __meta__ = {
@@ -205,8 +256,8 @@ __meta__ = {
 }
 
 [node name="TableEnemyCard3" type="Sprite" parent="."]
-position = Vector2( 1000, 120 )
-scale = Vector2( 0.35, 0.4 )
+position = Vector2( 960, 120 )
+scale = Vector2( 0.3, 0.35 )
 texture = ExtResource( 7 )
 script = ExtResource( 11 )
 __meta__ = {
@@ -214,8 +265,8 @@ __meta__ = {
 }
 
 [node name="TableEnemyCard4" type="Sprite" parent="."]
-position = Vector2( 1200, 120 )
-scale = Vector2( 0.35, 0.4 )
+position = Vector2( 1180, 120 )
+scale = Vector2( 0.3, 0.35 )
 texture = ExtResource( 7 )
 script = ExtResource( 11 )
 __meta__ = {
@@ -224,10 +275,10 @@ __meta__ = {
 
 [node name="DialogCardModeSelect" type="ConfirmationDialog" parent="."]
 visible = true
-margin_left = 16.7651
-margin_top = 159.051
-margin_right = 216.765
-margin_bottom = 229.051
+margin_left = 5.0
+margin_top = 160.0
+margin_right = 205.0
+margin_bottom = 230.0
 popup_exclusive = true
 window_title = "Card Mode Select"
 dialog_text = "Choose the mode:"
@@ -238,10 +289,10 @@ __meta__ = {
 
 [node name="DialogActionSelect" type="ConfirmationDialog" parent="."]
 visible = true
-margin_left = 16.3365
-margin_top = 269.744
-margin_right = 216.337
-margin_bottom = 339.744
+margin_left = 6.0
+margin_top = 260.0
+margin_right = 206.0
+margin_bottom = 330.0
 window_title = "Action Select"
 dialog_text = "Choose the action:"
 script = ExtResource( 10 )
